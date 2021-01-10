@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 10.5" name="SharepointDb">
+  <DataContextMoniker Name="/SharepointDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fc6ef0ad-3049-41d6-8fe5-4666cacfba48" absoluteBounds="3.5, 2, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SharepointDbDataContext/Client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="350f3309-d595-4351-a2bf-57b640da93e1" absoluteBounds="3.5150000005960464, 2.4600000008940697, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b9eb218-0004-4acd-b724-cf31a18bd52f" absoluteBounds="0.75, 2.25, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/SharepointDbDataContext/Sector" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76da1311-a098-4eb7-a8a1-61752863519b" absoluteBounds="0.76500000059604645, 2.7100000008940697, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d60820b-cd29-4506-a794-f9c841572be0" absoluteBounds="6.25, 4.5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/SharepointDbDataContext/Entity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56a94278-61bc-48ac-b88a-d1ec6e2a8229" absoluteBounds="6.2650000005960464, 4.96000000089407, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2be78a7-d0de-4c58-b704-f706b7e11053" absoluteBounds="6.25, 1.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/SharepointDbDataContext/ExternalContact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9501906-b535-4165-a935-65c1504935b7" absoluteBounds="6.2650000005960464, 2.3350000008940697, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="691177ad-4d47-48b4-a708-792f628f0411" absoluteBounds="6.25, 7.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/SharepointDbDataContext/InternalContact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a0baaa2-b4dd-4b93-8ec7-f5e7ca94dda4" absoluteBounds="6.2650000005960464, 7.96000000089407, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed72f1fa-0fd4-43d9-a993-900685ed594b" absoluteBounds="3.5, 6.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SharepointDbDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33d9b1e3-b73a-4198-827d-aadb630e0cc9" absoluteBounds="3.5150000005960464, 6.71000000089407, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c75a6005-e297-466c-9ef6-648b035ee5e3" absoluteBounds="11.75, 2, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SharepointDbDataContext/ProjectResource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ea6a559-baa0-42d0-b27b-a5391d20a0b7" absoluteBounds="11.765000000596046, 2.4600000008940697, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="111156ea-61fc-400f-8336-6ab17bcb9744" absoluteBounds="9, 1, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/SharepointDbDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ac28432-f24b-4f63-972d-63c7976dae09" absoluteBounds="9.0150000005960464, 1.4600000008940697, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08de51b9-d775-4b99-ba76-2fb3b90232cd" absoluteBounds="3.5, 8.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SharepointDbDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f249f520-d195-487e-9fa1-2bb7552622da" absoluteBounds="3.5150000005960464, 9.08500000089407, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.75084554036458); (3.5 : 2.75084554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Sector/Sector_Client" />
+      <nodes>
+        <classShapeMoniker Id="2b9eb218-0004-4acd-b724-cf31a18bd52f" />
+        <classShapeMoniker Id="fc6ef0ad-3049-41d6-8fe5-4666cacfba48" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.69314697265625); (6.25 : 2.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Client/Client_ExternalContact" />
+      <nodes>
+        <classShapeMoniker Id="fc6ef0ad-3049-41d6-8fe5-4666cacfba48" />
+        <classShapeMoniker Id="d2be78a7-d0de-4c58-b704-f706b7e11053" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.66429768864686); (6.25 : 7.66429768864686)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Member/Member_InternalContact" />
+      <nodes>
+        <classShapeMoniker Id="ed72f1fa-0fd4-43d9-a993-900685ed594b" />
+        <classShapeMoniker Id="691177ad-4d47-48b4-a708-792f628f0411" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.19314697265625); (10.4479191666667 : 8.19314697265625 : JumpStart); (10.6145858333333 : 8.19314697265625 : JumpEnd); (12.75 : 8.19314697265625); (12.75 : 3.3862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/InternalContact/InternalContact_ProjectResource" />
+      <nodes>
+        <classShapeMoniker Id="691177ad-4d47-48b4-a708-792f628f0411" />
+        <classShapeMoniker Id="c75a6005-e297-466c-9ef6-648b035ee5e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 2.69314697265625); (11.75 : 2.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Project/Project_ProjectResource" />
+      <nodes>
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+        <classShapeMoniker Id="c75a6005-e297-466c-9ef6-648b035ee5e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.3862939453125); (4.5 : 4.0729484047927); (9 : 4.0729484047927)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Client/Client_Project" />
+      <nodes>
+        <classShapeMoniker Id="fc6ef0ad-3049-41d6-8fe5-4666cacfba48" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 5.00165089042011); (9.38541416666667 : 5.00165089042011 : JumpStart); (9.55208083333333 : 5.00165089042011 : JumpEnd); (10 : 5.00165089042011); (10 : 4.50160970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Entity/Entity_Project" />
+      <nodes>
+        <classShapeMoniker Id="6d60820b-cd29-4506-a794-f9c841572be0" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.76044840494792); (9 : 2.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/ExternalContact/ExternalContact_Project" />
+      <nodes>
+        <classShapeMoniker Id="d2be78a7-d0de-4c58-b704-f706b7e11053" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.25522420265401); (9 : 2.25522420265401)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/ExternalContact/ExternalContact_Project1" />
+      <nodes>
+        <classShapeMoniker Id="d2be78a7-d0de-4c58-b704-f706b7e11053" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.81532098619774); (9.4687475 : 7.81532098619774); (9.4687475 : 4.50160970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/InternalContact/InternalContact_Project" />
+      <nodes>
+        <classShapeMoniker Id="691177ad-4d47-48b4-a708-792f628f0411" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.57097295911476); (10.5312525 : 8.57097295911476); (10.5312525 : 4.50160970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/InternalContact/InternalContact_Project1" />
+      <nodes>
+        <classShapeMoniker Id="691177ad-4d47-48b4-a708-792f628f0411" />
+        <classShapeMoniker Id="111156ea-61fc-400f-8336-6ab17bcb9744" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.54494516156388); (7.25 : 9.54494516156388); (7.25 : 8.8862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SharepointDbDataContext/Role/Role_InternalContact" />
+      <nodes>
+        <classShapeMoniker Id="08de51b9-d775-4b99-ba76-2fb3b90232cd" />
+        <classShapeMoniker Id="691177ad-4d47-48b4-a708-792f628f0411" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

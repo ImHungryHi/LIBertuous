@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo Language="en-us">
+  <Conditions And="and" Or="or" Not="not" When="If" Else="Else if">
+    <Condition Name="Site was created"
+        FunctionName="CreateSite"
+        ClassName="SharepointWorkflow.WorkflowStarter"
+        Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+        AppliesTo="all"
+        UsesCurrentItem="true">
+
+      <RuleDesigner Sentence="Create a new site from file: %1">
+        <FieldBind Id="1" Field="_1_" Text="path" DesignerType="Textarea" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="_1_" Type="System.String, mscorlib" Direction="In" DesignerType="TextArea" Description="PAF file url." DisplayName="FilePath" />
+      </Parameters>
+    </Condition>
+    <Condition Name="Create a new site from a PAF Projects item."
+        FunctionName="CreateSiteFromPAFList"
+        ClassName="SharepointWorkflow.WorkflowStarter"
+        Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+        AppliesTo="all"
+        UsesCurrentItem="true">
+
+      <RuleDesigner Sentence="Site was created from SharePoint PAF list item" />
+    </Condition>
+    <Condition Name="Set correct PAF Project ID"
+            FunctionName="SetCorrectID"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+      
+      <RuleDesigner Sentence="Correct PAF Project ID is set" />
+    </Condition>
+    <Condition Name="Update a site from a PAF Projects item"
+            FunctionName="EditSiteFromPAFList"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+      
+      <RuleDesigner Sentence="Site was updated from SharePoint PAF list item." />
+    </Condition>
+    <Condition Name="Send an update mail"
+            FunctionName="PAFProjectUpdateNotification"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+      
+      <RuleDesigner Sentence="Handled the sending of an update mail." />
+    </Condition>
+    <Condition Name="Send a preliminary report mail"
+            FunctionName="SendIntermediaryReport"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+
+      <RuleDesigner Sentence="Handled the sending of a preliminary report mail." />
+    </Condition>
+    <Condition Name="Upgrade member permissions"
+            FunctionName="UpgradeMemberPermissions"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+      
+      <RuleDesigner Sentence="All member groups have been given full control." />
+    </Condition>
+    <Condition Name="Debugger"
+            FunctionName="Debug"
+            ClassName="SharepointWorkflow.WorkflowStarter"
+            Assembly="SharepointWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f967ca6f1f76e18"
+            AppliesTo="all"
+            UsesCurrentItem="true">
+      
+      <RuleDesigner Sentence="Debug was successful." />
+    </Condition>
+  </Conditions>
+</WorkflowInfo>

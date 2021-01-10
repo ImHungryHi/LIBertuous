@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SharePointDb" Class="SharepointDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MOBE-DEV-01;Initial Catalog=SharePointDb;Integrated Security=True" SettingsObjectName="SharepointWorkflow.Properties.Settings" SettingsPropertyName="SharePointDbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Clients" Member="Clients">
+    <Type Name="Client">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="Sector" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Client_ExternalContact" Member="ExternalContacts" ThisKey="Id" OtherKey="ClientId" Type="ExternalContact" />
+      <Association Name="Client_Project" Member="Projects" ThisKey="Id" OtherKey="ClientId" Type="Project" />
+      <Association Name="Sector_Client" Member="Sector1" ThisKey="Sector" OtherKey="Name" Type="Sector" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sectors" Member="Sectors">
+    <Type Name="Sector">
+      <Column Name="Name" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Sector_Client" Member="Clients" ThisKey="Name" OtherKey="Sector" Type="Client" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Entities" Member="Entities">
+    <Type Name="Entity">
+      <Column Name="Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Entity_Project" Member="Projects" ThisKey="Code" OtherKey="Entity" Type="Project" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExternalContacts" Member="ExternalContacts">
+    <Type Name="ExternalContact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ClientId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ExternalContact_Project" Member="Projects" ThisKey="Id" OtherKey="ExternalProjectResponsible" Type="Project" />
+      <Association Name="ExternalContact_Project1" Member="Projects1" ThisKey="Id" OtherKey="ExternalEndResponsible" Type="Project" />
+      <Association Name="Client_ExternalContact" Member="Client" ThisKey="ClientId" OtherKey="Id" Type="Client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InternalContacts" Member="InternalContacts">
+    <Type Name="InternalContact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Role" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Member" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="InternalContact_ProjectResource" Member="ProjectResources" ThisKey="Id" OtherKey="InternalContactId" Type="ProjectResource" />
+      <Association Name="InternalContact_Project" Member="Projects" ThisKey="Id" OtherKey="InternalProjectResponsible" Type="Project" />
+      <Association Name="InternalContact_Project1" Member="Projects1" ThisKey="Id" OtherKey="InternalEndResponsible" Type="Project" />
+      <Association Name="Member_InternalContact" Member="Member1" ThisKey="Member" OtherKey="Id" Type="Member" IsForeignKey="true" />
+      <Association Name="Role_InternalContact" Member="Role1" ThisKey="Role" OtherKey="Id" Type="Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Members" Member="Members">
+    <Type Name="Member">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Member_InternalContact" Member="InternalContacts" ThisKey="Id" OtherKey="Member" Type="InternalContact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProjectResources" Member="ProjectResources">
+    <Type Name="ProjectResource">
+      <Column Name="ProjectCode" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InternalContactId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Days" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Association Name="InternalContact_ProjectResource" Member="InternalContact" ThisKey="InternalContactId" OtherKey="Id" Type="InternalContact" IsForeignKey="true" />
+      <Association Name="Project_ProjectResource" Member="Project" ThisKey="ProjectCode" OtherKey="Code" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projects" Member="Projects">
+    <Type Name="Project">
+      <Column Name="Code" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(120) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Summary" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Budget" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOfCompletion" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Entity" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ExternalProjectResponsible" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExternalEndResponsible" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InternalProjectResponsible" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InternalEndResponsible" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ClientId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Project_ProjectResource" Member="ProjectResources" ThisKey="Code" OtherKey="ProjectCode" Type="ProjectResource" />
+      <Association Name="Client_Project" Member="Client" ThisKey="ClientId" OtherKey="Id" Type="Client" IsForeignKey="true" />
+      <Association Name="Entity_Project" Member="Entity1" ThisKey="Entity" OtherKey="Code" Type="Entity" IsForeignKey="true" />
+      <Association Name="ExternalContact_Project" Member="ExternalContact" ThisKey="ExternalProjectResponsible" OtherKey="Id" Type="ExternalContact" IsForeignKey="true" />
+      <Association Name="ExternalContact_Project1" Member="ExternalContact1" ThisKey="ExternalEndResponsible" OtherKey="Id" Type="ExternalContact" IsForeignKey="true" />
+      <Association Name="InternalContact_Project" Member="InternalContact" ThisKey="InternalProjectResponsible" OtherKey="Id" Type="InternalContact" IsForeignKey="true" />
+      <Association Name="InternalContact_Project1" Member="InternalContact1" ThisKey="InternalEndResponsible" OtherKey="Id" Type="InternalContact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="HourRate" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Association Name="Role_InternalContact" Member="InternalContacts" ThisKey="Id" OtherKey="Role" Type="InternalContact" />
+    </Type>
+  </Table>
+</Database>
