@@ -1,0 +1,132 @@
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix
+{
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix
+{
+	display: block;
+}
+ 
+* html .clearfix
+{
+	height: 1%;
+}
+
+body
+{
+	background-color: #444;
+	font-family: "arial";
+	color: #684188;
+}
+
+div#sitewrapper
+{
+	background-color: #EEE;
+	width: 900px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+header
+{
+	margin-bottom: 15px;
+	width: 100%;
+	border-bottom: 1px solid #CCC;
+}
+
+header h1
+{
+	color: #E88C1B;
+}
+
+header h1 span
+{
+	color: #684188;
+}
+
+header nav
+{
+	height: 40px;
+	width: 100%;
+	background-color: #DDD;
+	display: block;
+}
+
+header nav ul
+{
+	list-style: none;
+}
+
+header nav ul li
+{
+	float: left;
+}
+
+header nav ul li a, header nav ul li a:visited
+{
+	color: #7841A8;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	height: 20px;
+	padding: 10px 30px;
+	background-color: #DDD;
+}
+
+header nav ul li a:hover
+{
+	color: #94E;
+	background-color: #E5E5E5;
+}
+
+header nav form
+{
+	position: relative;
+	float: right;
+	height: 40px;
+}
+
+header nav dl.reset
+{
+	margin: 0;
+}
+
+header nav form input#txtSearch
+{
+	height: 17px;
+	width: 200px;
+	padding: 5px;
+	font-size: 16px;
+	margin: 5px auto;
+	margin-right: 10px;
+}
+
+section#maincontent {
+	margin: 30px 0;
+	width: 900px;
+	display: block;
+}
+
+footer
+{
+	margin-top: 15px;
+	padding: 10px 0;
+	border-top: 1px solid #CCC;
+	text-align: right;
+}
+
+footer p
+{
+	font-size: 12px;
+}

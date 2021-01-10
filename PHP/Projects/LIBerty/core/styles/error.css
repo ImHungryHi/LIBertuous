@@ -1,0 +1,37 @@
+section#errorwrapper
+{
+	display: block;
+	width: 600px;
+	height: 200px;
+	margin: 40px auto;
+}
+
+section#errorwrapper article#bugs
+{
+	float: left;
+	margin-right: 10px;
+	width: 125px;
+	height: 200px;
+	display: block;
+}
+
+section#errorwrapper article#bugs span#phark
+{
+	display: block;
+	width: 125px;
+	height: 200px;
+	text-indent: -9999px;
+	background: url(../img/bugs.jpg);
+	repeat: none;
+}
+
+section#errorwrapper article#emptycontent
+{
+	position: relative;
+	float: right;
+	height: 100px;
+	width: 465px;
+	display: block;
+	margin-top: 30px;
+	
+}

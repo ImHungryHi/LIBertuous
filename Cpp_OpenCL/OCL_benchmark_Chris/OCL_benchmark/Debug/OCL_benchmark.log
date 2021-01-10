@@ -1,0 +1,299 @@
+﻿Build started 16/01/2013 2:16:16.
+     1>Project "E:\Dropbox\Dropbox\Project GPGPU\OCL_benchmark_Chris\OCL_benchmark\OCL_benchmark.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\OCL_benchmark.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include\Intel /I..\include\AMD /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\OCL_benchmark.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include\Intel /I..\include\AMD /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\OCL_benchmark.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Calculations.cpp ColorScale.cpp EdgeMatching.cpp LatticeBoltzmann.cpp LatticeSite.cpp LBMMain.cpp OCL_benchmark.cpp ParticleAdvection.cpp TSP.cpp util.cpp
+         util.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\util.cpp(41): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\util.cpp(42): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         TSP.cpp
+         ParticleAdvection.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(2): warning C4627: '#include "ParticleAdvection.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(5): error C2653: 'ParticleAdvection' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(7): error C2065: 'vf' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(8): error C2065: 'n' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(9): error C2065: 'dimx' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(10): error C2065: 'dimy' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(12): error C2065: 'particles' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(12): error C2065: 'n' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(14): error C3861: 'reset': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(15): warning C4508: 'ParticleAdvection' : function should return a value; 'void' return type assumed
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(17): error C2653: 'ParticleAdvection' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(20): error C2065: 'n' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(22): error C2065: 'particles' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(25): error C2065: 'particles' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(25): error C2065: 'dimx' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(26): error C2065: 'particles' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(26): error C2065: 'dimy' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(30): error C2653: 'ParticleAdvection' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\particleadvection.cpp(30): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         OCL_benchmark.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(120): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(121): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(127): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(128): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(134): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\ocl_benchmark.cpp(135): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         LBMMain.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(9): warning C4627: '#include <GL/glut.h>': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(10): warning C4627: '#include <Windows.h>': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(12): warning C4627: '#include <sdkddkver.h>': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(13): warning C4627: '#include <CL\cl.hpp>': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(15): warning C4627: '#include "LatticeBoltzmann.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(16): warning C4627: '#include "LatticeSite.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(17): warning C4627: '#include "ColorScale.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(18): warning C4627: '#include "ParticleAdvection.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(34): error C2143: syntax error : missing ';' before '*'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(35): error C2143: syntax error : missing ';' before '*'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(37): error C2146: syntax error : missing ';' before identifier 'rainbow'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(38): error C2146: syntax error : missing ';' before identifier 'bluewhite'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(38): error C2086: 'int ColorScale' : redefinition
+                 e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(37) : see declaration of 'ColorScale'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(57): error C2227: left of '->getSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(57): error C2228: left of '.isBoundary' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(60): error C2228: left of '.GetColor' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(62): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(62): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(62): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(77): error C2227: left of '->getSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(77): error C2228: left of '.isBoundary' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(84): error C2228: left of '.GetColor' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(87): warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(88): warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(89): warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(108): warning C4244: 'argument' : conversion from 'double' to 'GLint', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(108): warning C4244: 'argument' : conversion from 'double' to 'GLint', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(111): warning C4244: 'argument' : conversion from 'double' to 'GLint', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(117): warning C4244: 'argument' : conversion from 'double' to 'GLint', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(130): error C2227: left of '->getParticle' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(164): error C3861: 'glutSwapBuffers': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(169): error C2227: left of '->update' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(170): error C2227: left of '->advect0' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(173): error C3861: 'glutPostRedisplay': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(177): error C2065: 'GLUT_ELAPSED_TIME' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(177): error C3861: 'glutGet': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(184): error C3861: 'glutSetWindowTitle': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(198): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(199): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(201): error C2065: 'GLUT_DOWN' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(203): error C2065: 'GLUT_LEFT_BUTTON' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(205): error C2227: left of '->getSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(205): error C2228: left of '.isFluid' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(215): error C2065: 'GLUT_RIGHT_BUTTON' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(221): error C2227: left of '->setSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(221): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(221): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(233): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(234): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(238): error C2227: left of '->setSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(238): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(238): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(242): error C2227: left of '->setMotionOn' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(244): error C2227: left of '->getSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(244): error C2228: left of '.isFluid' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(253): error C2227: left of '->setSite' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(253): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(253): error C2065: 'Fluid' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(257): error C2227: left of '->getMotionStatus' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(259): error C2227: left of '->setMotionOff' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(281): error C2227: left of '->reset' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(282): error C2227: left of '->reset' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(299): error C2324: 'LatticeBoltzmann' : unexpected to the right of '->~'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(300): error C2324: 'ParticleAdvection' : unexpected to the right of '->~'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(308): error C2227: left of '->GetAverageCalculationsPerSecond' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(318): error C2061: syntax error : identifier 'LatticeBoltzmann'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(319): error C2227: left of '->getDensityAndVelocityField' must point to class/struct/union/generic type
+                 type is 'int *'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(321): error C2061: syntax error : identifier 'ParticleAdvection'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(324): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(325): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(326): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(327): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(328): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(329): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(332): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(333): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(334): error C2228: left of '.AddPoint' must have class/struct/union
+                 type is 'int'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(341): error C3861: 'glutInit': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(342): error C2065: 'GLUT_RGBA' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(342): error C2065: 'GLUT_DOUBLE' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(342): error C3861: 'glutInitDisplayMode': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(343): error C3861: 'glutInitWindowSize': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(345): error C3861: 'glutCreateWindow': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(348): error C3861: 'glutDisplayFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(349): error C3861: 'glutIdleFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(350): error C3861: 'glutMouseFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(351): error C3861: 'glutMotionFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(352): error C3861: 'glutReshapeFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(353): error C3861: 'glutKeyboardFunc': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\lbmmain.cpp(361): error C3861: 'glutMainLoop': identifier not found
+         LatticeSite.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(1): warning C4627: '#include "LatticeSite.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(9): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(10): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(11): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(13): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(16): warning C4508: 'LatticeSite' : function should return a value; 'void' return type assumed
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(18): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(18): error C2065: 'SiteType' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(18): error C2146: syntax error : missing ')' before identifier 't'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(18): error C2182: 'init' : illegal use of type 'void'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(18): error C2059: syntax error : ')'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(19): error C2143: syntax error : missing ';' before '{'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(19): error C2447: '{' : missing function header (old-style formal list?)
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(26): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(31): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(38): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(39): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(46): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(54): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(56): error C2065: 'type' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(56): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(62): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(65): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(70): error C2065: 'type' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(70): error C2065: 'Fluid' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(76): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(77): error C2065: 'f' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(82): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(84): error C2065: 'type' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(84): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(87): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(89): error C2065: 'type' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(89): error C2065: 'Fluid' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(92): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(92): error C2065: 'SiteType' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(92): error C2146: syntax error : missing ')' before identifier 't'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(92): error C2182: 'setType' : illegal use of type 'void'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(92): error C2059: syntax error : ')'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(93): error C2143: syntax error : missing ';' before '{'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(93): error C2447: '{' : missing function header (old-style formal list?)
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(97): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticesite.cpp(107): error C2065: 'f' : undeclared identifier
+         LatticeBoltzmann.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(1): warning C4627: '#include "LatticeBoltzmann.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(2): warning C4627: '#include "LatticeSite.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(3): warning C4627: '#include "ColorScale.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(11): error C2653: 'LatticeBoltzmann' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(13): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(14): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(16): error C2065: 'sites' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(16): error C2061: syntax error : identifier 'LatticeSite'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(17): error C2065: 'sites_' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(17): error C2061: syntax error : identifier 'LatticeSite'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(19): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(21): error C2065: 'sites' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(21): error C2061: syntax error : identifier 'LatticeSite'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(22): error C2065: 'sites_' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(22): error C2061: syntax error : identifier 'LatticeSite'
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(26): error C2065: 'rho' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(26): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(27): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(28): error C2065: 'rho' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(28): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(31): error C2065: 'u' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(31): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(32): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(34): error C2065: 'u' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(34): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(36): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(37): error C2065: 'u' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(40): error C3861: 'reset': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(41): warning C4508: 'LatticeBoltzmann' : function should return a value; 'void' return type assumed
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(43): error C2653: 'LatticeBoltzmann' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(45): error C2355: 'this' : can only be referenced inside non-static member functions
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(45): error C2227: left of '->calculations' must point to class/struct/union/generic type
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(45): error C3861: 'Calculations': identifier not found
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(46): error C2355: 'this' : can only be referenced inside non-static member functions
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(46): error C2227: left of '->motion' must point to class/struct/union/generic type
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(49): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(51): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(53): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(53): error C2065: 'dims' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(55): error C2065: 'sites' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(55): error C2228: left of '.init' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(55): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(55): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(56): error C2065: 'sites_' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(56): error C2228: left of '.init' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(56): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(56): error C2065: 'Boundary' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(60): error C2065: 'sites' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(60): error C2228: left of '.init' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(60): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(60): error C2065: 'Fluid' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(61): error C2065: 'sites_' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(61): error C2228: left of '.init' must have class/struct/union
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(61): error C2653: 'LatticeSite' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(61): error C2065: 'Fluid' : undeclared identifier
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(67): error C2653: 'LatticeBoltzmann' : is not a class or namespace name
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\latticeboltzmann.cpp(67): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         EdgeMatching.cpp
+         ColorScale.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\colorscale.cpp(1): warning C4627: '#include "ColorScale.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\colorscale.cpp(61): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+         Calculations.cpp
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\calculations.cpp(1): warning C4627: '#include "Calculations.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+     1>e:\dropbox\dropbox\project gpgpu\ocl_benchmark_chris\ocl_benchmark\calculations.cpp(27): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+         Generating Code...
+     1>Done Building Project "E:\Dropbox\Dropbox\Project GPGPU\OCL_benchmark_Chris\OCL_benchmark\OCL_benchmark.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.16

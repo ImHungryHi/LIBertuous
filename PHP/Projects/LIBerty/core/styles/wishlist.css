@@ -1,0 +1,80 @@
+section#mainwrapper div#boxError
+{
+	color: #A00;
+	background-color: #CCC;
+	padding: 20px;
+	margin-bottom: 20px;
+	line-height: 5px;
+}
+
+section#mainwrapper form
+{
+	display: block;
+	width: 700px;
+	margin: 20px auto;
+}
+
+section#mainwrapper form fieldset
+{
+	border: none;
+}
+
+section#mainwrapper form fieldset dd
+{
+	display: block;
+	height: 30px;
+	width: 600px;
+	margin-bottom: 10px;
+}
+
+section#mainwrapper form fieldset dd.textbox input
+{
+	height: 30px;
+	width: 600px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section#mainwrapper form fieldset dd#buttons
+{
+	margin-top: 20px;
+	width: 603px;
+}
+
+section#mainwrapper form fieldset dd#buttons label:first-child
+{
+	margin-right: 13px;
+}
+
+section#mainwrapper form fieldset dd#buttons label
+{
+	display: block;
+	width: 295px;
+	height: 40px;
+	float: left;
+}
+
+section#mainwrapper form fieldset dd#buttons input
+{
+	color: #0CC;
+	background-color: #CCC;
+	width: 295px;
+	height: 40px;
+	border: none;
+	font-size: 20px;
+}
+
+section#mainwrapper form fieldset dd#buttons input:hover
+{
+	background-color: #DDD;
+}
+
+section#mainwrapper div#boxEmpty
+{
+	display: block;
+	height: 50px;
+	width: 900px;
+	padding: 15px 0;
+	text-align: center;
+	background-color: #CCC;
+}
